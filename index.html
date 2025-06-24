@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Epitaph Project</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/dqk4hbf.css" />
+  </head>
+  <body class="fade-in">
+    <div class="mobile-warning">
+            <img class="landing-img" src="https://cdn.glitch.global/f914c3c4-7fb4-415d-ae04-0c4ca007f8db/gravestones.gif?v=1730260053788" alt="GIF of gravestone styles" width="auto">
+      <h3>This website is currently desktop only! Please visit on a larger screen, or check back in a while...</h3>
+    </div>
+    <div class="landing">
+      <img class="landing-img" src="https://cdn.glitch.global/f914c3c4-7fb4-415d-ae04-0c4ca007f8db/gravestones.gif?v=1730260053788" alt="GIF of gravestone styles" width="auto">
+      <h1 class="landing-header">How do you want to be remembered?</h1>
+      <h3>Click anywhere to begin...</h3>
+    </div>
+    <div class="options-wrapper">
+      <div class="option border option-a">
+        <span class="option-label">A</span>
+        <div class="svg-wrapper">
+            <img src="img/A.svg" alt="A classic rounded top." width="100%">
+        </div>
+        <div class="overlay">
+          <p>The Classic.</p>
+        </div>
+      </div>
+      <div class="option border option-b">
+        <span class="option-label">B</span>
+        <div class="svg-wrapper">
+            <img src="img/B.svg" alt="An authoritarian prism." width="100%">
+        </div>
+        <div class="overlay">
+          <p>The Authoritarian.</p>
+        </div>
+      </div>
+      <div class="option border option-c">
+        <span class="option-label">C</span>
+        <div class="svg-wrapper">
+            <img src="img/C.svg" alt="An ornamental heart shape." width="100%">
+        </div>
+        <div class="overlay">
+          <p>The Lover.</p>
+        </div>
+      </div>
+      <div class="option border option-d">
+        <span class="option-label">D</span>
+        <div class="svg-wrapper">
+            <img src="img/D.svg" alt="An oval top headstone." width="100%">
+        </div>
+        <div class="overlay">
+          <p>The Demure.</p>
+        </div>
+      </div>
+      <div class="option border option-e">
+        <span class="option-label">E</span>
+        <div class="svg-wrapper">
+            <img src="img/E.svg" alt="A rockstar\'s rock." width="100%">
+        </div>
+        <div class="overlay">
+          <p>The Rockstar.</p>
+        </div>
+      </div>
+      <div class="option border option-f">
+        <span class="option-label">F</span>
+        <div class="svg-wrapper">
+            <img src="img/F.svg" alt="A dreamer\'s cloud." width="100%">
+        </div>
+        <div class="overlay">
+          <p>The Dreamer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="designer-wrapper">
+      <div class="border">
+        <h1 class="header">Design your own tombstone!</h1>
+        <div class="designer-preview" id="capture">
+          <div class="tombstone-wrapper">
+            <img src="img/A.svg" alt="A classic rounded top" width="100%">
+          </div>
+          <div class="epitaph-wrapper">
+            <div class="epitaph">
+              <p class="name-output" id="name-output"></p>
+              <p class="epitaph-output" id="epitaph-output"></p>
+            </div>
+          </div>
+        </div>
+        <div class="inputs-wrapper">
+          <div class="divider"></div>
+          <input type="text" id="name" placeholder="Your name here..." maxlength="40"/>
+          <div class="divider"></div>
+          <input type="text" id="epitaph" placeholder="Your epitaph here..." maxlength="40"/>
+        </div>
+      </div>
+    </div>
+    <div class="buttons-wrapper">
+      <div class="custom-select">
+        <select id="fontSelect" onchange="changeFont (this);">
+          <option value="Plantin MT Pro">Default Font</option>
+          <option value="Arial">Arial</option>
+          <option value="Arial Narrow">Arial Narrow</option>
+          <option value="Comic Sans MS">Comic Sans</option>
+          <option value="Papyrus">Papyrus</option>
+        </select>
+      </div>
+      <button class="save border">Save</button>
+    </div>
+  <script src="script.js"></script>
+  </body>
+</html>
